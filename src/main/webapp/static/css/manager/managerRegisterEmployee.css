@@ -1,0 +1,4 @@
+.warning, .all-warnings{
+	color: red;
+	white-space: pre-wrap
+}

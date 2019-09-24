@@ -1,0 +1,34 @@
+<div class="container">
+  <p>All Employees</p>
+  <div>
+    <select id="all_employees_select" class=" input-sm mdb-select md-form" selected="selected">
+      <option selected>Select row count</option>
+      <option value="1">One</option>
+      <option value="5">FIve</option>
+      <option value="10" selected>Ten</option>
+    </select>
+    <button id="update_all_employees" type="button" class="btn btn-primary">Refresh</button>
+  </div>
+  <table id="employees_table" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th class="th-sm">Email
+        </th>
+        <th class="th-sm">Name
+        </th>
+      </tr>
+    </thead>
+    <tbody id="all_employees_tbody">
+    </tbody>
+    <tfoot>
+        <tr>
+          <td colspan="3">
+            <nav aria-label="Page navigation example" style="float: left;">
+              <ul id="all_employees_pagination" class="pagination">
+              </ul>
+            </nav>
+          </td>
+        </tr>
+      </tfoot>
+  </table>
+</div>

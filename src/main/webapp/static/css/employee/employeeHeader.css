@@ -1,0 +1,12 @@
+#mini_profile_image {
+  border-radius: 50%;
+  display: none;
+}
+
+#i_s{
+	font-size: 50px;
+}
+
+table {
+	table-layout: fixed
+}

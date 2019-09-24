@@ -1,0 +1,76 @@
+<div class="container">
+	<form id="form" class="form-horizontal">
+		<h2>Register Employee</h2>
+		<hr style="visibility: hidden;">
+		<p>
+			<strong id="all-warnings"></strong>
+		</p>
+		<p>
+			<strong class="warning" id="firstname_warning"></strong>
+		</p>
+		<div class="form-group">
+			<label for="firstName" class="col-sm-3 control-label">First
+				Name*</label>
+			<div class="col-sm-9">
+				<input type="text" id="firstName" placeholder="First Name"
+					class="form-control"  required autofocus
+					title="Invalid first name, please use Letters, dashes, and apostrophes.">
+			</div>
+		</div>
+		<p>
+			<strong class="warning" id="lastname_warning"></strong>
+		</p>
+		<div class="form-group">
+			<label for="lastName" class="col-sm-3 control-label">Last
+				Name*</label>
+			<div class="col-sm-9">
+				<input type="text" id="lastName" placeholder="Last Name"
+					class="form-control" pattern="[A-Za-z-']{2,32}" required autofocus
+					title="Invalid last name, please use Letters, dashes, and apostrophes.">
+			</div>
+		</div>
+		<p>
+			<strong class="warning" id="email_warning"></strong>
+		</p>
+		<div class="form-group">
+			<label for="email" class="col-sm-3 control-label">Email* </label>
+			<div class="col-sm-9">
+				<input type="email" id="email" placeholder="Email"
+					class="form-control" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required
+					title="example@example.com">
+			</div>
+		</div>
+		<p>
+			<strong class="warning" id="password_warning"></strong>
+		</p>
+		<div class="form-group">
+			<label for="password" class="col-sm-3 control-label">Password*</label>
+			<div class="col-sm-9">
+				<input type="password" id="password" placeholder="Password"
+					class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}"
+					required
+					title="At least one number, one lowercase and one uppercase letter. At least six characters">
+			</div>
+		</div>
+		<p>
+			<strong class="warning" id="confirm_password_warning"></strong>
+		</p>
+		<div class="form-group">
+			<label for="confirm_password" class="col-sm-3 control-label">Confirm
+				Password*</label>
+			<div class="col-sm-9">
+				<input type="password" id="confirm_password"
+					placeholder="Confirm Password" class="form-control"
+					pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}" required
+					title="At least one number, one lowercase and one uppercase letter. At least six characters">
+			</div>
+		</div>
+		<input type="hidden" id="authority" value="EMPLOYEE"/>
+		<div class="form-group">
+			<div class="col-sm-9 col-sm-offset-3">
+				<span class="help-block">*Required fields</span>
+			</div>
+		</div>
+		<button id="submit" type="submit" class="btn btn-primary">Register</button>
+	</form>
+</div>
