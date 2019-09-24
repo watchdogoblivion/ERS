@@ -1,0 +1,4 @@
+language: java
+
+script:
+  - mvn -e sonar:sonar -Dsonar.projectKey=watchdogoblivion_ERS -Dsonar.organization=samueldorilas -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
