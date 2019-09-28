@@ -1,0 +1,4 @@
+src/main/webapp/static/bootstrap/* linguist-vendored
+src/main/webapp/static/fontawesome/* linguist-vendored
+src/main/webapp/static/jquery/* linguist-vendored
+src/main/webapp/static/jwt_decoder/* linguist-vendored
